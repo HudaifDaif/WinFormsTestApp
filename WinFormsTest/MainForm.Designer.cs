@@ -1,6 +1,6 @@
 ﻿namespace WinFormsTest
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,65 +29,72 @@
         private void InitializeComponent()
         {
             SubmitButton = new Button();
-            textBox1 = new TextBox();
+            FirstNameText = new TextBox();
             FirstNameLabel = new Label();
             LastNameLabel = new Label();
-            textBox2 = new TextBox();
+            LastNameText = new TextBox();
             SuspendLayout();
             // 
             // SubmitButton
             // 
-            SubmitButton.Location = new Point(322, 324);
+            SubmitButton.Location = new Point(506, 498);
+            SubmitButton.Margin = new Padding(5);
             SubmitButton.Name = "SubmitButton";
-            SubmitButton.Size = new Size(94, 29);
-            SubmitButton.TabIndex = 0;
+            SubmitButton.Size = new Size(153, 45);
+            SubmitButton.TabIndex = 3;
             SubmitButton.Text = "Say Hi!";
             SubmitButton.UseVisualStyleBackColor = true;
-            SubmitButton.Click += button1_Click;
+            SubmitButton.Click += SubmitButton_Click;
             // 
-            // textBox1
+            // FirstNameText
             // 
-            textBox1.Location = new Point(322, 37);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 1;
+            FirstNameText.Location = new Point(523, 57);
+            FirstNameText.Margin = new Padding(5);
+            FirstNameText.Name = "FirstNameText";
+            FirstNameText.Size = new Size(201, 38);
+            FirstNameText.TabIndex = 1;
             // 
             // FirstNameLabel
             // 
             FirstNameLabel.AutoSize = true;
-            FirstNameLabel.Location = new Point(222, 40);
+            FirstNameLabel.Location = new Point(361, 62);
+            FirstNameLabel.Margin = new Padding(5, 0, 5, 0);
             FirstNameLabel.Name = "FirstNameLabel";
-            FirstNameLabel.Size = new Size(80, 20);
+            FirstNameLabel.Size = new Size(124, 31);
             FirstNameLabel.TabIndex = 2;
             FirstNameLabel.Text = "First Name";
             // 
             // LastNameLabel
             // 
             LastNameLabel.AutoSize = true;
-            LastNameLabel.Location = new Point(222, 105);
+            LastNameLabel.Location = new Point(361, 163);
+            LastNameLabel.Margin = new Padding(5, 0, 5, 0);
             LastNameLabel.Name = "LastNameLabel";
-            LastNameLabel.Size = new Size(79, 20);
+            LastNameLabel.Size = new Size(122, 31);
             LastNameLabel.TabIndex = 4;
             LastNameLabel.Text = "Last Name";
             // 
-            // textBox2
+            // LastNameText
             // 
-            textBox2.Location = new Point(322, 102);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
-            textBox2.TabIndex = 3;
+            LastNameText.Location = new Point(523, 158);
+            LastNameText.Margin = new Padding(5);
+            LastNameText.Name = "LastNameText";
+            LastNameText.Size = new Size(201, 38);
+            LastNameText.TabIndex = 2;
             // 
-            // Form1
+            // MainForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(13F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1180, 666);
             Controls.Add(LastNameLabel);
-            Controls.Add(textBox2);
+            Controls.Add(LastNameText);
             Controls.Add(FirstNameLabel);
-            Controls.Add(textBox1);
+            Controls.Add(FirstNameText);
             Controls.Add(SubmitButton);
-            Name = "Form1";
+            Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(5);
+            Name = "MainForm";
             Text = "Hello User";
             ResumeLayout(false);
             PerformLayout();
@@ -96,9 +103,9 @@
         #endregion
 
         private Button SubmitButton;
-        private TextBox textBox1;
+        private TextBox FirstNameText;
         private Label FirstNameLabel;
         private Label LastNameLabel;
-        private TextBox textBox2;
+        private TextBox LastNameText;
     }
 }
