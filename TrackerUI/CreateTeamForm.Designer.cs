@@ -140,7 +140,7 @@
             firstNameLabel.AutoSize = true;
             firstNameLabel.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             firstNameLabel.ForeColor = SystemColors.MenuHighlight;
-            firstNameLabel.Location = new Point(6, 39);
+            firstNameLabel.Location = new Point(6, 42);
             firstNameLabel.Name = "firstNameLabel";
             firstNameLabel.Size = new Size(167, 41);
             firstNameLabel.TabIndex = 9;
@@ -148,7 +148,7 @@
             // 
             // lastNameText
             // 
-            lastNameText.Location = new Point(172, 89);
+            lastNameText.Location = new Point(172, 90);
             lastNameText.Name = "lastNameText";
             lastNameText.Size = new Size(345, 47);
             lastNameText.TabIndex = 12;
@@ -158,7 +158,7 @@
             lastNameLabel.AutoSize = true;
             lastNameLabel.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lastNameLabel.ForeColor = SystemColors.MenuHighlight;
-            lastNameLabel.Location = new Point(6, 89);
+            lastNameLabel.Location = new Point(6, 93);
             lastNameLabel.Name = "lastNameLabel";
             lastNameLabel.Size = new Size(164, 41);
             lastNameLabel.TabIndex = 11;
@@ -166,7 +166,7 @@
             // 
             // emailAddressText
             // 
-            emailAddressText.Location = new Point(172, 138);
+            emailAddressText.Location = new Point(172, 141);
             emailAddressText.Name = "emailAddressText";
             emailAddressText.Size = new Size(345, 47);
             emailAddressText.TabIndex = 14;
@@ -176,7 +176,7 @@
             emailAddressLabel.AutoSize = true;
             emailAddressLabel.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             emailAddressLabel.ForeColor = SystemColors.MenuHighlight;
-            emailAddressLabel.Location = new Point(6, 138);
+            emailAddressLabel.Location = new Point(6, 144);
             emailAddressLabel.Name = "emailAddressLabel";
             emailAddressLabel.Size = new Size(95, 41);
             emailAddressLabel.TabIndex = 13;
