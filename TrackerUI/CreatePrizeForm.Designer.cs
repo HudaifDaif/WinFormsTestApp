@@ -169,7 +169,7 @@
             Font = new Font("Segoe UI", 16.2F);
             Margin = new Padding(6, 6, 6, 6);
             Name = "CreatePrizeForm";
-            Text = "CreatePrize";
+            Text = "Create Prize";
             ResumeLayout(false);
             PerformLayout();
         }
