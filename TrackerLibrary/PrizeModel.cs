@@ -3,7 +3,13 @@
 public class PrizeModel
 {
     /// <summary>
-    /// Represents the integer identifier for the prize.
+    /// Represents the unique identifier for the prize.
+    /// </summary>
+    public int Id { get; set; }
+
+    /// <summary>
+    /// Represents the integer identifier for the prize grade,
+    /// in relation to other prizes (1 being the highest).
     /// </summary>
     public int PlaceNumber { get; set; }
 
