@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             headerLabel = new Label();
-            PlaceNumberText = new TextBox();
+            placeNumberText = new TextBox();
             placeNumberLabel = new Label();
             prizePercentageText = new TextBox();
             prizePercentageLabel = new Label();
@@ -52,12 +52,12 @@
             headerLabel.TabIndex = 12;
             headerLabel.Text = "Create Prize";
             // 
-            // PlaceNumberText
+            // placeNumberText
             // 
-            PlaceNumberText.Location = new Point(440, 114);
-            PlaceNumberText.Name = "PlaceNumberText";
-            PlaceNumberText.Size = new Size(345, 43);
-            PlaceNumberText.TabIndex = 14;
+            placeNumberText.Location = new Point(440, 114);
+            placeNumberText.Name = "placeNumberText";
+            placeNumberText.Size = new Size(345, 43);
+            placeNumberText.TabIndex = 14;
             // 
             // placeNumberLabel
             // 
@@ -148,6 +148,7 @@
             CreatePrizeButton.TabIndex = 24;
             CreatePrizeButton.Text = "Create Prize";
             CreatePrizeButton.UseVisualStyleBackColor = false;
+            CreatePrizeButton.Click += CreatePrizeButton_Click;
             // 
             // CreatePrizeForm
             // 
@@ -163,11 +164,11 @@
             Controls.Add(prizeAmountLabel);
             Controls.Add(prizePercentageText);
             Controls.Add(prizePercentageLabel);
-            Controls.Add(PlaceNumberText);
+            Controls.Add(placeNumberText);
             Controls.Add(placeNumberLabel);
             Controls.Add(headerLabel);
             Font = new Font("Segoe UI", 16.2F);
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
             Name = "CreatePrizeForm";
             Text = "Create Prize";
             ResumeLayout(false);
@@ -177,7 +178,7 @@
         #endregion
 
         private Label headerLabel;
-        private TextBox PlaceNumberText;
+        private TextBox placeNumberText;
         private Label placeNumberLabel;
         private TextBox prizePercentageText;
         private Label prizePercentageLabel;
