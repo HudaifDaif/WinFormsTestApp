@@ -27,6 +27,19 @@ namespace TrackerUI
                                                   prizeAmountText.Text,
                                                   prizePercentageText.Text);
 
+                foreach (IDataConnection db in GlobalConfig.Connections)
+                {
+                    db.CreatePrize(model);
+                }
+
+                placeNumberText.Text = "";
+                placeNameText.Text = "";
+                prizeAmountText.Text = "0";
+                prizePercentageText.Text = "0";
+            }
+            else
+            {
+                MessageBox.Show("Some of the information entered into the form was invalid, please check and try again.");
             }
         }
 
@@ -36,7 +49,7 @@ namespace TrackerUI
 
 
             int placeNumber;
-            bool validPlaceNumber = int.TryParse(placeNameText.Text, out placeNumber);
+            bool validPlaceNumber = int.TryParse(placeNumberText.Text, out placeNumber);
 
             if (!validPlaceNumber)
             {
@@ -57,7 +70,7 @@ namespace TrackerUI
             double prizePercentage = 0;
             bool validPrizePercentage = double.TryParse(prizePercentageText.Text, out prizePercentage);
 
-            if (!validPrizePercentage || !validPrizePercentage)
+            if (!validPrizeAmount || !validPrizePercentage)
             {
                 output = false;
             }

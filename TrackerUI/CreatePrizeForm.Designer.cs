@@ -57,7 +57,7 @@
             placeNumberText.Location = new Point(440, 114);
             placeNumberText.Name = "placeNumberText";
             placeNumberText.Size = new Size(345, 43);
-            placeNumberText.TabIndex = 14;
+            placeNumberText.TabIndex = 1;
             // 
             // placeNumberLabel
             // 
@@ -75,7 +75,8 @@
             prizePercentageText.Location = new Point(440, 394);
             prizePercentageText.Name = "prizePercentageText";
             prizePercentageText.Size = new Size(345, 43);
-            prizePercentageText.TabIndex = 16;
+            prizePercentageText.TabIndex = 4;
+            prizePercentageText.Text = "0";
             // 
             // prizePercentageLabel
             // 
@@ -93,7 +94,8 @@
             prizeAmountText.Location = new Point(440, 248);
             prizeAmountText.Name = "prizeAmountText";
             prizeAmountText.Size = new Size(345, 43);
-            prizeAmountText.TabIndex = 18;
+            prizeAmountText.TabIndex = 3;
+            prizeAmountText.Text = "0";
             // 
             // prizeAmountLabel
             // 
@@ -111,7 +113,7 @@
             placeNameText.Location = new Point(440, 181);
             placeNameText.Name = "placeNameText";
             placeNameText.Size = new Size(345, 43);
-            placeNameText.TabIndex = 20;
+            placeNameText.TabIndex = 2;
             // 
             // placeNameLabel
             // 
@@ -145,7 +147,7 @@
             CreatePrizeButton.Location = new Point(355, 534);
             CreatePrizeButton.Name = "CreatePrizeButton";
             CreatePrizeButton.Size = new Size(171, 115);
-            CreatePrizeButton.TabIndex = 24;
+            CreatePrizeButton.TabIndex = 5;
             CreatePrizeButton.Text = "Create Prize";
             CreatePrizeButton.UseVisualStyleBackColor = false;
             CreatePrizeButton.Click += CreatePrizeButton_Click;
